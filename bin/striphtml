@@ -1,0 +1,16 @@
+#!/usr/bin/perl 
+#
+#
+use warnings;
+use strict;
+
+# striphtml
+# Remove all html tags from a local file.
+# Usage: ./fixnl file.html > newfile.html
+# Read in file.html and print results to stdout
+#
+
+while(<>) {
+  s#<(/)?>##g;
+  print;
+}

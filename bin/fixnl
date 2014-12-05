@@ -1,0 +1,16 @@
+#!/usr/bin/perl 
+#
+#
+use warnings;
+use strict;
+
+# fixln
+# Convert format from Windows to Unix.
+# Usage: ./fixnl file.txt > newfile.txt
+# Read in file.txt and print results to stdout
+#
+
+while(<>) {
+  s/\r\n/\n/;
+  print;
+}
